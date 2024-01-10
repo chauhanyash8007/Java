@@ -1,4 +1,4 @@
-public class extra_questions5 {
+public class extra_questions10 {
     public static void main(String[] args) {
         int x = 10, y = 5;
 
