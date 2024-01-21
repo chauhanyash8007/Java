@@ -3,6 +3,7 @@
     BC
     DEF      // print the following pattern
     GHIJ  
+    
  */
 
 public class pattern4 {

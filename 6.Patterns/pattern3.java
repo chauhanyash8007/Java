@@ -1,8 +1,12 @@
 /*
+
+
     1
     12         // print the  following pattern
     123
     1234
+
+    
  */
 
 public class pattern3 {

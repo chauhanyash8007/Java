@@ -1,8 +1,12 @@
 /*
+
+
   ****
   ***    // print the following pattern
   **
   *
+
+
  */
 
 public class pattern2 {
