@@ -1,4 +1,4 @@
-public class extra_questions4 {
+public class extra_question4 {
     public static void main(String[] args) {
         byte b = 4;
         char c = 'a';

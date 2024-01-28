@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class extra_questions2 {
+public class extra_question2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

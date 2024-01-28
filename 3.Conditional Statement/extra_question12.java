@@ -1,5 +1,5 @@
 
-public class extra_questions2 {
+public class extra_question12 {
     public static void main(String[] args) {
 
         float temp = 103.5f;
