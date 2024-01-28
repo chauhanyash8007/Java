@@ -1,7 +1,5 @@
 // reverse the array
 
-import java.util.*;
-
 public class Array6 {
 
     public static int reverse(int numbers[]) {

@@ -37,5 +37,6 @@ public class Array1 {
         System.out.println("avg : " + avg);
 
         System.out.println("length : " + marks.length);
+        sc.close();
     }
 }

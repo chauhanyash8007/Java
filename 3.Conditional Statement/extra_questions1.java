@@ -11,5 +11,6 @@ public class extra_questions1 {
         } else {
             System.out.println("Value is negative : " + x);
         }
+        sc.close();
     }
 }

@@ -31,5 +31,6 @@ public class Function15 {
         } else {
             System.out.println("number : " + palindrome + " is not a palindrome");
         }
+        sc.close();
     }
 }

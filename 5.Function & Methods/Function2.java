@@ -18,6 +18,7 @@ public class Function2 {
         int b = sc.nextInt();
         int sum = calculateSum(a, b); // arguments or actual parameters
         System.out.println("sum is : " + sum);
+        sc.close();
 
     }
 }

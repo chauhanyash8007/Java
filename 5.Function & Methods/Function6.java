@@ -1,7 +1,5 @@
 // factorial of given number + find Binomial Coefficient
 
-import java.util.*;
-
 public class Function6 {
 
     public static int factorial(int n) {

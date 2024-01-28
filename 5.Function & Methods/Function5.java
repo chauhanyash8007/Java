@@ -1,7 +1,5 @@
 // factorial of given number
 
-import java.util.*;
-
 public class Function5 {
 
     public static int factorial(int n) {

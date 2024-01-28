@@ -20,6 +20,7 @@ public class Function13 {
         double z = sc.nextDouble();
 
         System.out.println("The average value is " + average(x, y, z) + "\n");
+        sc.close();
 
     }
 

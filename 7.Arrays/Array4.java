@@ -1,7 +1,5 @@
 // Largest and smallest in array
 
-import java.util.*;
-
 public class Array4 {
 
     public static int largestNumber(int numbers[]) {

@@ -12,6 +12,7 @@ public class if_else3 {
         } else {
             System.out.println("Odd");
         }
+        sc.close();
     }
 
 }

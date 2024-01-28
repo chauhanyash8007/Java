@@ -1,7 +1,5 @@
 // Switch statement
 
-import java.util.*;
-
 public class switch9 {
     public static void main(String[] args) {
         int number = 2;

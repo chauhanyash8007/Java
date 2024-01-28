@@ -16,5 +16,6 @@ public class extra_questions1 {
 
         int avg = (A + B + C) / 3;
         System.out.println("Average of 3 numbers is : " + avg);
+        sc.close();
     }
 }

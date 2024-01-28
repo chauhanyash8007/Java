@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class practice_questions2 {
+public class extra_questions2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int number;
@@ -27,5 +27,6 @@ public class practice_questions2 {
 
         System.out.println("sum of even number is : " + evenSum);
         System.out.println("sum of odd number is : " + oddSum);
+        sc.close();
     }
 }

@@ -14,5 +14,6 @@ public class while3 {
             counter++;
         }
         System.out.println();
+        sc.close();
     }
 }

@@ -11,5 +11,6 @@ public class extra_questions2 {
 
         int area = side * side;
         System.out.println("Area of a square is : " + area);
+        sc.close();
     }
 }

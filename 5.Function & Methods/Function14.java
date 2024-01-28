@@ -24,5 +24,6 @@ public class Function14 {
         } else {
             System.out.println("Number is Odd : ");
         }
+        sc.close();
     }
 }

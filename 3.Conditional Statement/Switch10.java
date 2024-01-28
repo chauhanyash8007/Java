@@ -33,6 +33,6 @@ public class Switch10 {
             default:
                 System.out.println("wrong operator");
         }
+        sc.close();
     }
 }
-

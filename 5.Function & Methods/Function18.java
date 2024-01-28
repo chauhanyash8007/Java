@@ -4,6 +4,7 @@ public class Function18 {
 
         // converting values to radian
         double b = Math.toRadians(a);
+        System.out.println(b);
 
         // return the trigonometric sine of a
         System.out.println("Sine value of a is: " + Math.sin(a));

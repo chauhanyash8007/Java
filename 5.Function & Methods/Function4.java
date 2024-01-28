@@ -19,5 +19,6 @@ public class Function4 {
         System.out.println("a * b =" + prod);
         prod = calculateProduct(2, 50);
         System.out.println(prod);
+        sc.close();
     }
 }

@@ -17,6 +17,7 @@ public class while4 {
 
         }
         System.out.print("sum is : " + sum);
+        sc.close();
 
     }
 }

@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class practice_questions3 {
+public class extra_questions3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -16,5 +16,6 @@ public class practice_questions3 {
 
         }
         System.out.println("Factorial : " + fact);
+        sc.close();
     }
 }

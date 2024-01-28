@@ -19,5 +19,6 @@ public class Function16 {
         System.out.println("Enter an integer : ");
         int digits = sc.nextInt();
         System.out.println("The sum is : " + sumDigits(digits));
+        sc.close();
     }
 }

@@ -11,6 +11,7 @@ class MultiplicationTable {
         for (int i = 1; i <= 10; i++) {
             System.out.println(n + "*" + i + " =" + n * i);
         }
+        sc.close();
     }
 
     public static void main(String s[]) {

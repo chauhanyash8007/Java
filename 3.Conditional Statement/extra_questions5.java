@@ -15,6 +15,7 @@ public class extra_questions5 {
         } else {
             System.out.println(year + " is not a leap year");
         }
+        sc.close();
 
     }
 }

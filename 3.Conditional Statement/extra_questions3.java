@@ -39,6 +39,7 @@ public class extra_questions3 {
             default:
                 System.out.println("Invalid unput ! Please enter week number between 1-7.");
         }
+        sc.close();
 
     }
 

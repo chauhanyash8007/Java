@@ -14,6 +14,7 @@ public class break11 {
             }
             System.out.println(n);
         } while (true);
+        sc.close();
 
     }
 }

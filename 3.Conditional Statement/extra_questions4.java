@@ -8,11 +8,6 @@ public class extra_questions4 {
         int y = (a > b) ? a : b;
         System.out.println(y);
 
-        int larger = (5 > 3) ? 5 : 3;
-        System.out.println(larger);
-
-        String type = (5 % 2 == 0) ? "Even" : "Odd";
-        System.out.println(type);
     }
 
 }

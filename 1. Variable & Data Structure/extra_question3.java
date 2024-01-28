@@ -20,6 +20,7 @@ public class extra_question3 {
 
         float newCost = cost + (cost * 0.18f);
         System.out.println("NewTotal with gst is : " + newCost);
+        sc.close();
 
     }
 }

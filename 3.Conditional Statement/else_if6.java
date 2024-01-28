@@ -1,7 +1,5 @@
 // print the largest of 3 number
 
-import java.util.*;
-
 public class else_if6 {
     public static void main(String[] args) {
         int A = 1;
@@ -16,6 +14,7 @@ public class else_if6 {
         } else {
             System.out.println("C is Largest");
         }
+
     }
 
 }

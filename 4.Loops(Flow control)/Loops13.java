@@ -21,6 +21,7 @@ public class Loops13 {
                 System.out.println("n is not Prime");
             }
         }
+        sc.close();
 
     }
 }
