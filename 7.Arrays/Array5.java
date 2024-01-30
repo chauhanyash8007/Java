@@ -2,7 +2,7 @@
 
 public class Array5 {
 
-    public static int binartSearch(int numbers[], int key) {
+    public static int binarySearch(int numbers[], int key) {
         int start = 0, end = numbers.length - 1;
 
         while (start <= end) {
@@ -25,6 +25,6 @@ public class Array5 {
         int numbers[] = { 2, 4, 6, 8, 10, 12, 14 };
         int key = 10;
 
-        System.out.println("index for key is : " + binartSearch(numbers, key));
+        System.out.println("index for key is : " + binarySearch(numbers, key));
     }
 }
