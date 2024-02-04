@@ -5,7 +5,7 @@ public class switch9 {
         int number = 2;
         switch (number) {
             case 1:
-                System.out.println("somasa");
+                System.out.println("samosa");
                 break;
 
             case 2:

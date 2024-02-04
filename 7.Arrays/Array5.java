@@ -1,5 +1,7 @@
 // binary search
 
+// time complexity = O(log n)
+
 public class Array5 {
 
     public static int binarySearch(int numbers[], int key) {

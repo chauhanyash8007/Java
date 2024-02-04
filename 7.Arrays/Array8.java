@@ -17,7 +17,7 @@ public class Array8 {
             System.out.println();
 
         }
-        System.out.println("total arrays are " + array);
+        System.out.println("total arrays are : " + array);
 
     }
 

@@ -1,5 +1,7 @@
 // Linear search
 
+// time complexity = O(n)
+
 public class Array3 {
 
     public static int linearSearch(int numbers[], int key) {
@@ -25,3 +27,32 @@ public class Array3 {
 
     }
 }
+
+/*
+ * public class Array3 {
+ * public static int linearSearch(String menu[], String key) {
+ * for (int i = 0; i < menu.length; i++) {
+ * if (menu[i] == key) {
+ * return i;
+ * }
+ * 
+ * }
+ * return -1;
+ * }
+ * 
+ * public static void main(String[] args) {
+ * 
+ * String menu[] = { "a", "b", "c", "d", "e" };
+ * String key = "d";
+ * 
+ * int index = linearSearch(menu, key);
+ * 
+ * if (index == -1) {
+ * System.out.println("key not found ");
+ * } else {
+ * System.out.println("key is at index : " + index);
+ * }
+ * 
+ * }
+ * }
+ */

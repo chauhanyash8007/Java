@@ -22,3 +22,9 @@ public class Java11 {
         System.out.println(v);
     }
 }
+
+/*
+ * byre , short , char are converted into (int)
+ * 
+ * long , float , double are converted into long,float,double respectively
+ */

@@ -1,5 +1,7 @@
 // print the pairs of array
 
+// time complexity = O(n square)
+
 public class Array7 {
 
     public static void printPairs(int numbers[]) {

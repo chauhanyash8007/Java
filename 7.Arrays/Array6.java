@@ -1,5 +1,8 @@
 // reverse the array
 
+//time complexity = O(n)
+//space complexity = O(1)
+
 public class Array6 {
 
     public static int reverse(int numbers[]) {

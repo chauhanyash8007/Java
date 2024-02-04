@@ -1,5 +1,7 @@
 // Largest and smallest in array
 
+// time complexity = O(n)
+
 public class Array4 {
 
     public static int largestNumber(int numbers[]) {

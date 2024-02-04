@@ -1,9 +1,9 @@
 /*
 
-  ****
-  *  *
-  *  *  print the following pattern
-  ****
+  *****
+  *   *
+  *   *  print the following pattern
+  *****
 
  */
 

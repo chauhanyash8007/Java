@@ -11,7 +11,7 @@ public class extra_question1 {
         System.out.println("Enter value of B : ");
         int B = sc.nextInt();
 
-        System.out.println("Enetr value of C : ");
+        System.out.println("Enter value of C : ");
         int C = sc.nextInt();
 
         int avg = (A + B + C) / 3;
