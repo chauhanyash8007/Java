@@ -1,5 +1,7 @@
 //print sub arrays
 
+//time complexity = O(n cube)
+
 public class Array8 {
 
     public static void printSub(int numbers[]) {

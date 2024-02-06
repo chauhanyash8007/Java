@@ -1,5 +1,7 @@
 //print Maximum sub arrays
 
+//time complexity = O(n cube)
+
 public class Array9 {
 
     public static void printSub(int numbers[]) {

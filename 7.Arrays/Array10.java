@@ -1,5 +1,7 @@
 // max sub array (prefix-sum)
 
+// time complexity = O(n square)
+
 public class Array10 {
 
     public static void printSub(int numbers[]) {
