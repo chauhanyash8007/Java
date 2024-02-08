@@ -1,6 +1,6 @@
 // max sub array (prefix-sum)
 
-// time complexity = O(n square)
+// time complexity = O(n^2)
 
 public class Array10 {
 

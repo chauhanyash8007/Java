@@ -1,6 +1,6 @@
 // print the pairs of array
 
-// time complexity = O(n square)
+// time complexity = O(n^2)
 
 public class Array7 {
 

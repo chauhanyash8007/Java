@@ -1,6 +1,6 @@
 //print sub arrays
 
-//time complexity = O(n cube)
+//time complexity = O(n^3)
 
 public class Array8 {
 

@@ -1,6 +1,6 @@
 // return true is any value appears at least twice in given array 
 
-// time complexity = O(n square)
+// time complexity = O(n^2)
 
 public class Array14 {
 
@@ -16,7 +16,7 @@ public class Array14 {
     }
 
     public static void main(String[] args) {
-        int number[] = { 1, 1, 1, 3, 3, 3, 4, 3, 2, 4, 2 };
+        int number[] = { 1, 2, 3, 1 };
 
         System.out.println(containsDuplicate(number));
     }
