@@ -1,3 +1,5 @@
+// declaring 2-D array and printing  
+
 import java.util.*;
 
 public class Matrices1 {

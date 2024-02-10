@@ -1,3 +1,5 @@
+// finding the largest & smallest element form array 
+
 import java.util.*;
 
 public class Matrices2 {

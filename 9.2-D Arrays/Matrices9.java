@@ -1,3 +1,5 @@
+// print the transpose matrix of given matrix
+
 public class Matrices9 {
 
     public static void printMatrix(int matrix[][]) {

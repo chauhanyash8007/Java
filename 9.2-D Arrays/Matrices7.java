@@ -1,3 +1,5 @@
+// counting the 7 element how many times it repeat in array
+
 public class Matrices7 {
     public static void main(String[] args) {
         int array[][] = { { 4, 7, 8 }, { 8, 8, 7 } };
