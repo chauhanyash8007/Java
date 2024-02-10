@@ -38,8 +38,13 @@ public class Strings14 {
 
             }
 
-            // cases when length are not equal
+        }
+        // cases when length are not equal
+        else {
+
+            System.out.println(str1 + "and " + str2 + "are  not anagrams of each other");
 
         }
+
     }
 }
