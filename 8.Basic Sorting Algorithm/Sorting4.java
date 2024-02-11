@@ -7,7 +7,7 @@ public class Sorting4 {
     public static void main(String[] args) {
         // int arrays[] = { 5, 4, 1, 3, 2 };
         // Arrays.sort(arrays);
-        // Arrays.sort(arrays, 0, 3); start index & end index+1
+        // Arrays.sort(arrays, 0, 3); //start index & end index-1
 
         Integer arrays[] = { 5, 4, 1, 3, 2 };
 
