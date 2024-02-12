@@ -1,6 +1,6 @@
 // swap 2 variables without using 3 operator use XOR operator
 
-public class Operators13 {
+public class BitOperators13 {
     public static void main(String[] args) {
         int x = 3, y = 4;
 

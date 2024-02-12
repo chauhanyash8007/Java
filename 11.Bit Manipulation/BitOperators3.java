@@ -1,6 +1,6 @@
 // Get ith Bit 
 
-public class Operators3 {
+public class BitOperators3 {
 
     public static int getIthBit(int n, int i) {
         int bitMask = 1 << i;

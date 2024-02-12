@@ -1,6 +1,6 @@
 // update ith Bit 2 method
 
-public class Operators7 {
+public class BitOperators7 {
 
     public static int setIthBit(int n, int i) {
         int bitMask = 1 << i;

@@ -1,6 +1,6 @@
 // count set Bits in numbers
 
-public class Operators11 {
+public class BitOperators11 {
 
     public static int countSteBits(int n) {
         int count = 0;

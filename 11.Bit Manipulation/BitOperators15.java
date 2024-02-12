@@ -1,6 +1,6 @@
 // convert uppercase characters to lowercase using bits
 
-public class Operators15 {
+public class BitOperators15 {
     public static void main(String[] args) {
 
         // convert uppercase to lowercase

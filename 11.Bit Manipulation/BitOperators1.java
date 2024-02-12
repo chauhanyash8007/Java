@@ -1,4 +1,4 @@
-public class Operators1 {
+public class BitOperators1 {
 
     public static void main(String[] args) {
 

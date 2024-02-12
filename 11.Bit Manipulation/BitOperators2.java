@@ -1,6 +1,6 @@
 // Check if a number is odd or even
 
-public class Operators2 {
+public class BitOperators2 {
 
     public static void oddOrEven(int n) {
         int bitMask = 1;

@@ -1,6 +1,6 @@
 // clear range of bits
 
-public class Operators9 {
+public class BitOperators9 {
 
     public static int clearRangeOfBits(int n, int i, int j) {
         int a = ((~0) << (j + 1));

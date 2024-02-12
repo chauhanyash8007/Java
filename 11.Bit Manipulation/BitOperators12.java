@@ -1,6 +1,6 @@
 // Fast Exponentiation
 
-public class Operators12 {
+public class BitOperators12 {
 
     public static int fastExpo(int a, int n) {
         int ans = 1;

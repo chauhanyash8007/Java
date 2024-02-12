@@ -1,6 +1,6 @@
 // Clear last ith Bit
 
-public class Operators8 {
+public class BitOperators8 {
 
     public static int clearLastIthBit(int n, int i) {
         int bitMask = (~0) << i;

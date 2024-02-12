@@ -1,6 +1,6 @@
 // update ith Bit
 
-public class Operators6 {
+public class BitOperators6 {
 
     public static int setIthBit(int n, int i) {
         int bitMask = 1 << i;
