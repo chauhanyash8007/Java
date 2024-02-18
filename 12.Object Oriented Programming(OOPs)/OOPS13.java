@@ -1,7 +1,7 @@
-// constructor
+// constructor chaining method
 public class OOPS13 {
     public static void main(String[] args) {
-        Temp t = new Temp();
+        // Temp t = new Temp();
 
     }
 }
