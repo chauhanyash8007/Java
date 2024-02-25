@@ -9,6 +9,9 @@ public class OOPS14 {
 
         Deer d = new Deer();
         d.eats();
+
+        Human h = new Human();
+        h.eats();
     }
 }
 
@@ -31,6 +34,7 @@ class calculator {
 
 // Method overriding
 // it means same function name we use and while using the function which is use
+// it also called run time polymorphism(dynamic)
 // will be chile function
 class Animal {
     void eats() {
@@ -41,5 +45,11 @@ class Animal {
 class Deer extends Animal {
     void eats() {
         System.out.println("eats grass");
+    }
+}
+
+class Human extends Deer {
+    void eats() {
+        System.out.println("eats pizza");
     }
 }

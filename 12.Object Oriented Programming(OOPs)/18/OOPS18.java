@@ -18,7 +18,9 @@ class Animal {
 
 class Horse extends Animal {
     Horse() {
-        super.color = "Brown";
+        super.color = "Brown"; // super key called parent class first then child class
+        // if we don't write super here java by default called super (parent) class
+        // first
         System.out.println("Horse constructor is called"); // 2 print because of super keyword
     }
 }

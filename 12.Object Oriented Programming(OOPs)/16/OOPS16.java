@@ -12,17 +12,17 @@ public class OOPS16 {
 }
 
 // multiple inheritance using interfaces
-interface Herbivore {
+interface Herbivore { // class a
     void eat();
 
 }
 
-interface Carnivore {
+interface Carnivore { // class b
     void eats();
 
 }
 
-class Bear implements Herbivore, Carnivore {
+class Bear implements Herbivore, Carnivore { // class a+b called multiple inheritance
     public void eat() {
         System.out.println("eats grass");
     }
@@ -34,7 +34,7 @@ class Bear implements Herbivore, Carnivore {
 
 interface ChessPlayer {
     void moves();
-    // by default it is public and abstract
+    // by default it is public and abstract without implementation
 
 }
 
