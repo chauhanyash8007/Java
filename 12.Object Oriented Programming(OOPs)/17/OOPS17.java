@@ -4,12 +4,15 @@ public class OOPS17 {
     public static void main(String[] args) {
         // Student s1 = new Student();
         // s1.SchoolName = "JMV";
+        // System.out.println(s1.SchoolName);
 
         // Student s2 = new Student();
         // System.out.println(s2.SchoolName);
 
         // Student s3 = new Student();
         // s3.SchoolName = "ABC";
+        // System.out.println(s3.SchoolName);
+        // System.out.println(s2.SchoolName);
 
     }
 }
