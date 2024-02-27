@@ -1,5 +1,5 @@
 // Print the sum of First N natural number
-// Time complexity = O(n)
+// Time complexity = O(n^2) exponential
 // Space complexity = O(n)
 
 public class Recursion4 {
