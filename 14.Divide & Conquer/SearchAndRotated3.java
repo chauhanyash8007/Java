@@ -1,3 +1,6 @@
+// Time Complexity = O(n log n)
+// Space Complexity = O(1)
+
 public class SearchAndRotated3 {
 
     public static int searchAndRotatedArray(int[] array, int target, int si, int ei) {
