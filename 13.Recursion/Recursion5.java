@@ -1,5 +1,6 @@
 // Print Nth fibonacci numbers
 // Time complexity = O(n)
+// Main Worst Case Time complexity = O(2^n) This one is true not upper one
 // Space complexity = O(n)
 
 public class Recursion5 {

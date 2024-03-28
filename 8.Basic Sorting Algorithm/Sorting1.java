@@ -1,6 +1,8 @@
 // Bubble Sort
 
-// Time Complexity = O(n square)
+// Worst Case Time Complexity = O(n^2)
+// Best Case Time Complexity = O(n^2)
+// only for this solution
 
 public class Sorting1 {
 

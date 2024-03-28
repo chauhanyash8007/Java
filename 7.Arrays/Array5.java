@@ -1,6 +1,6 @@
 // binary search
 
-// time complexity = O(log n)
+//  Worst Case Time Complexity = O(log n)
 
 public class Array5 {
 

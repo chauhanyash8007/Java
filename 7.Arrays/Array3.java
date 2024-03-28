@@ -1,6 +1,6 @@
 // Linear search
 
-// time complexity = O(n)
+// Worst Case Time Complexity = O(n)
 
 public class Array3 {
 

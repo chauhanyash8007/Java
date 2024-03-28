@@ -12,7 +12,9 @@ public class Recursion10 {
 
         // if power is even
 
-        // int HalfPowerSquare = optimizedPower(a, n / 2) * optimizedPower(a, n / 2);
+        // int HalfPowerSquare = optimizedPower(a, n / 2) * optimizedPower(a, n / 2); //
+        // Here for this power
+        // Function 2 Time And Space Complexity is O(n) ok
 
         int halfPower = optimizedPower(a, n / 2);
         int HalfPowerSquare = halfPower * halfPower;

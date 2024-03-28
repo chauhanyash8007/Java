@@ -1,5 +1,6 @@
 //  Print x to the power n
-// Time complexity = O(n)
+// Time Complexity = O(n)
+// Space Complexity = O(n)
 
 public class Recursion9 {
 

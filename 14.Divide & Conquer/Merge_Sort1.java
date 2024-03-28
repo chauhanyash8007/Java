@@ -1,4 +1,4 @@
-// Time Complexity = O(n log n)
+//  Worst Case Time Complexity = O(n log n)
 // Space Complexity = O(n)
 
 public class Merge_Sort1 {

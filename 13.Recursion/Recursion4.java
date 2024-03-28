@@ -1,5 +1,6 @@
 // Print the sum of First N natural number
 // Time complexity = O(n^2) exponential
+// Main True Worst Case Time complexity = O(n)  this one is true
 // Space complexity = O(n)
 
 public class Recursion4 {
