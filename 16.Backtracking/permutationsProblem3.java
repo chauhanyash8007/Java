@@ -1,4 +1,5 @@
 // Time complexity = O(n*n!)
+// Space Complexity = O(n)
 
 public class permutationsProblem3 {
 
