@@ -1,4 +1,6 @@
 // print all index of the key
+// Time Complexity = O(n)
+// Space Complexity = O(n)
 
 public class Recursion15 {
 

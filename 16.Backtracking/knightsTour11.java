@@ -1,3 +1,6 @@
+// Time Complexity= O(2^(n^2))
+// Space Complexity= O(n^2)
+
 public class knightsTour11 {
 
     static int N = 8;

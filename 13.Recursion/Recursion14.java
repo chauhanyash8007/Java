@@ -1,4 +1,6 @@
 // Binary String Problem
+// Time Complexity = O(2^n)
+// Space Complexity = O(n*2^n)
 
 public class Recursion14 {
 

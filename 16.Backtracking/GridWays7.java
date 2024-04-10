@@ -1,4 +1,5 @@
 // Time Complexity = O(2^n+m) which is exponential time complexity
+// Space Complexity=O(n+m)
 
 public class GridWays7 {
 

@@ -1,3 +1,6 @@
+// Time Complexity =O(9^n^2)
+// Space Complexity =O(n^2)
+
 public class Sudoku8 {
 
     public static boolean isSafe(int sudoku[][], int row, int col, int digit) {

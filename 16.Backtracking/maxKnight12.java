@@ -1,3 +1,6 @@
+// Time Complexity=O(n^2*2^(n^2))
+// Space Complexity=O(n^2)
+
 public class maxKnight12 {
 
     public static boolean isSafe(char board[][], int row, int col) {
@@ -57,7 +60,7 @@ public class maxKnight12 {
 
     }
 
-    static int number = 3;
+    static int number = 4;
 
     public static void nKnights(char board[][], int row, int col, int num) {
         int n = board.length;
@@ -67,6 +70,7 @@ public class maxKnight12 {
                 count++;
 
             }
+            maxKnights = Math.max(maxKnights, num);
 
             return;
         } else if (isSafe(board, row, col)) {
@@ -115,5 +119,6 @@ public class maxKnight12 {
         }
         nKnights(board, 0, 0, 0);
         System.out.println("Total ways to solve nKnight is : " + count);
+        System.out.println("maxKnights are : " + maxKnights);
     }
 }

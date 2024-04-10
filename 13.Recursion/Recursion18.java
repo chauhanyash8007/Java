@@ -1,4 +1,6 @@
 // print all contiguous substrings where starting and ending index is same
+// Time Complexity = O(2^n)
+// Space Complexity = O(n)
 
 public class Recursion18 {
 

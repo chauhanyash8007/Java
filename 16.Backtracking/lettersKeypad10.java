@@ -1,3 +1,6 @@
+// Time Complexity=O(3^n*4^m)
+//Space Complexity=O(n)
+
 public class lettersKeypad10 {
 
     final static char[][] L = { {}, {}, { 'a', 'b', 'c' }, { 'd', 'e', 'f' }, { 'g', 'h', 'i' }, { 'j', 'k', 'l' },

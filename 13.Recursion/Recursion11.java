@@ -1,4 +1,6 @@
 // Tiling Problem
+// Time Complexity=O(2^n)
+// Space Complexity=O(n)
 
 public class Recursion11 {
     public static int tilingProblem(int n) { // 2 X n (Floor size)

@@ -1,4 +1,6 @@
 // find length of string using recursion
+// Time Complexity = O(n^2)
+// Space Complexity = O(n)
 
 public class Recursion17 {
 

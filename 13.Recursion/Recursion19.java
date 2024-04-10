@@ -1,4 +1,6 @@
 // tower of Hanoi problem using 3 disks
+// Time Complexity = O(2^n)
+// Space Complexity = O(n)
 
 public class Recursion19 {
 

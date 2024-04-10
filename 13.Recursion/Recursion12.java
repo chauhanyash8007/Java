@@ -1,4 +1,6 @@
 // Remove Duplicate in a String
+// Time Complexity =O(n)
+// Space Complexity =O(n)
 
 public class Recursion12 {
 

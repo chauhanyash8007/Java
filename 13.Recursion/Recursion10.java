@@ -1,6 +1,7 @@
 //  Optimized
 //  Print x to the power n
 //  Time complexity = O(log n)
+//  Space complexity = O(log n)
 
 public class Recursion10 {
 

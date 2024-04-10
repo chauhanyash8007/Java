@@ -1,3 +1,6 @@
+// Time Complexity=O(2^n)
+// Space Complexity=O(n^2)
+
 public class RatInAMaze9 {
 
     public static void printSolution(int sol[][]) {

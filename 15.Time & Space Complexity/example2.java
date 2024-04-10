@@ -1,5 +1,6 @@
 // Here i loop is running for n/2 times and inner loop j is running for j+j*2 times means log n times 
 // So total Time Complexity is = O(n log n)
+// Space Complexity= O(1)
 
 public class example2 {
     public static void main(String[] args) {
