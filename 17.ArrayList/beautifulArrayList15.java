@@ -21,7 +21,8 @@ public class beautifulArrayList15 {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = beautifulArray(5);
+        System.out.println("Beautiful Array of 5 : " + list);
 
     }
 }

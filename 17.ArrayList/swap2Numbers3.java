@@ -1,3 +1,5 @@
+// Time Complexity = O(1)
+
 import java.util.ArrayList;
 
 public class swap2Numbers3 {
