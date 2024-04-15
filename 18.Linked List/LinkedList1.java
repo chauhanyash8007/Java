@@ -189,7 +189,7 @@ public class LinkedList1 {
     // Time Complexity for this reversLinkedList function is = O(n)
     public void reversLinkedList() {
         Node prev = null;
-        Node current = tail = head;
+        Node current = tail = head; // we are reversing ths linkList so head will became tail after reversing
         Node next;
 
         while (current != null) {
@@ -202,27 +202,122 @@ public class LinkedList1 {
         head = prev;
     }
 
+    // Find And Remove Nth Node From End
+    // Time Complexity for this deleteNthFromEnd function is = O(n)
+    public void deleteNthFromEnd(int n) {
+        // calculate size
+        // sz=size
+        int sz = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            sz++;
+
+        }
+
+        if (n == sz) {
+            head = head.next; // removeFirstNode
+            return;
+        }
+
+        // sz-1
+        int i = 1;
+        int iToFind = sz - n;
+        Node prev = head;
+        while (i < iToFind) {
+            prev = prev.next;
+            i++;
+        }
+
+        prev.next = prev.next.next;
+        return;
+
+    }
+
+    // check if LinkList is palindrome
+    // Time = O(n) ans Space = O(1)
+
+    // slow-fast approach
+    public Node findMid(Node head) {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next; // +1
+            fast = fast.next.next; // +2
+
+        }
+
+        return slow; // slow is now middle
+    }
+
+    public boolean checkPalindrome() {
+        // no element and 1 Element case
+        if (head == null || head.next == null) {
+            return true;
+        }
+        // Step 1: find mid
+        Node midNode = findMid(head);
+
+        // Step 2: revers 2nd half
+        Node prev = null;
+        Node current = midNode;
+        Node next;
+
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+
+        }
+        // right half head prev will became right half head after revers
+        Node right = prev;
+        Node left = head;
+
+        // Step 3: check left half with right half
+        while (right != null) {
+            if (left.data != right.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+
+        }
+        return true;
+
+    }
+
     public static void main(String[] args) {
         LinkedList1 ll = new LinkedList1();
-        ll.addFirst(2);
-        ll.addFirst(1);
-        ll.addLast(4);
-        ll.addLast(5);
-        ll.addInMiddle(2, 3);
-        ll.printLinkList();
+        // ll.addFirst(2);
+        // ll.addFirst(1);
+        // ll.addLast(4);
+        // ll.addLast(5);
+        // ll.addInMiddle(2, 3);
+        // ll.printLinkList();
         // System.out.println(ll.size); this one is true
-        System.out.println(LinkedList1.size); // but we can also write this way too print size
-        ll.removeFirst();
+        // System.out.println(LinkedList1.size); // but we can also write this way too
+        // print size
+        // ll.removeFirst();
+        // ll.printLinkList();
+        // ll.removeLast();
+        // ll.printLinkList();
+        // System.out.println(ll.iterativeSearch(3));
+        // System.out.println(ll.iterativeSearch(7));
+        // System.out.println(ll.recursiveSearch(3));
+        // System.out.println(ll.recursiveSearch(5));
+        // ll.printLinkList();
+        // ll.reversLinkedList();
+        // ll.printLinkList();
+        // ll.deleteNthFromEnd(3);
+        // ll.printLinkList();
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(2);
+        ll.addLast(1);
         ll.printLinkList();
-        ll.removeLast();
-        ll.printLinkList();
-        System.out.println(ll.iterativeSearch(3));
-        System.out.println(ll.iterativeSearch(7));
-        System.out.println(ll.recursiveSearch(3));
-        System.out.println(ll.recursiveSearch(5));
-        ll.printLinkList();
-        ll.reversLinkedList();
-        ll.printLinkList();
+        System.out.println(ll.checkPalindrome());
 
     }
 }
