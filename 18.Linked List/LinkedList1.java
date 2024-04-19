@@ -18,6 +18,7 @@ public class LinkedList1 {
     public static int size;
 
     // Time Complexity for this addFirst function is = O(1)
+    // 1
     public void addFirst(int data) {
 
         // 1) if there is 1 or more then 1 node exist the perform this 3 steps
@@ -42,6 +43,7 @@ public class LinkedList1 {
     }
 
     // Time Complexity for this addLast function is = O(1)
+    // 2
     public void addLast(int data) {
 
         // 1) if there is 1 or more then 1 node exist the perform this 3 steps
@@ -65,6 +67,7 @@ public class LinkedList1 {
     }
 
     // Time Complexity for this printLinkList function is = O(n)
+    // 3
     public void printLinkList() {
 
         if (head == null) {
@@ -83,6 +86,7 @@ public class LinkedList1 {
     }
 
     // Time Complexity for this addInMiddle function is = O(n)
+    // 4
     public void addInMiddle(int index, int data) {
         if (index == 0) {
             addFirst(data);
@@ -105,6 +109,7 @@ public class LinkedList1 {
 
     }
 
+    // 5
     public int removeFirst() {
         if (size == 0) {
             System.out.println("Link List is empty");
@@ -122,6 +127,7 @@ public class LinkedList1 {
 
     }
 
+    // 6
     public int removeLast() {
         if (size == 0) {
             System.out.println("Link List is empty");
@@ -148,6 +154,7 @@ public class LinkedList1 {
     }
 
     // Time Complexity for this iterativeSearch function is = O(n)
+    // 7
     public int iterativeSearch(int key) {
         Node temp = head;
         int i = 0;
@@ -165,6 +172,7 @@ public class LinkedList1 {
     }
 
     // Time Complexity for this recursiveSearch function is = O(n)
+    // 8
     public int helperRecursiveSearch(Node head, int key) {
         if (head == null) {
             return -1;
@@ -187,6 +195,7 @@ public class LinkedList1 {
     }
 
     // Time Complexity for this reversLinkedList function is = O(n)
+    // 9
     public void reversLinkedList() {
         Node prev = null;
         Node current = tail = head; // we are reversing ths linkList so head will became tail after reversing
@@ -204,6 +213,7 @@ public class LinkedList1 {
 
     // Find And Remove Nth Node From End
     // Time Complexity for this deleteNthFromEnd function is = O(n)
+    // 10
     public void deleteNthFromEnd(int n) {
         // calculate size
         // sz=size
@@ -238,6 +248,7 @@ public class LinkedList1 {
     // Time = O(n) ans Space = O(1)
 
     // slow-fast approach
+    // 11
     public Node findMid(Node head) {
         Node slow = head;
         Node fast = head;
@@ -288,36 +299,184 @@ public class LinkedList1 {
 
     }
 
+    // Detecting Cycle / Loop in LinkList
+    // 12
+    public static boolean isCycle() { // it is also called Floyd's Cycle Finding algorithm
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next; // +1
+            fast = fast.next.next; // +2
+            if (slow == fast) { // Cycle exists
+                return true;
+            }
+
+        }
+        return false; // Cycle doesn't exists
+    }
+
+    // RemovingCycle in LinkedList
+    // 13
+    public static void removeCycle() {
+        // Detecting Cycle
+        Node slow = head;
+        Node fast = head;
+        boolean Cycle = false;
+        while (fast != null && fast.next != null) {
+            slow = slow.next; // +1
+            fast = fast.next.next; // +2
+            if (slow == fast) { // Cycle exists
+                Cycle = true;
+                break;
+            }
+
+        }
+        if (Cycle == false) {
+            return;
+        }
+        // find meeting point
+        slow = head;
+        Node prev = null; // last node
+        while (slow != fast) {
+            prev = fast;
+            slow = slow.next;
+            fast = fast.next;
+
+        }
+        // remove cycle -> last.next=null
+        prev.next = null; // Last node next is equal to null
+    }
+
+    // MergeSort on LinkedList
+    // 14
+    // Time = O(n log n)
+
+    private Node getMid(Node head) {
+        Node slow = head;
+        Node fast = head.next;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+        }
+        return slow;
+
+    }
+
+    private Node merge(Node head1, Node head2) {
+        Node mergeLL = new Node(-1);
+        Node temp = mergeLL;
+
+        while (head1 != null && head2 != null) {
+            if (head1.data <= head2.data) {
+                temp.next = head1;
+                head1 = head1.next;
+                temp = temp.next;
+            } else {
+                temp.next = head2;
+                head2 = head2.next;
+                temp = temp.next;
+            }
+
+        }
+
+        while (head1 != null) {
+            temp.next = head1;
+            head1 = head1.next;
+            temp = temp.next;
+
+        }
+
+        while (head2 != null) {
+            temp.next = head2;
+            head2 = head2.next;
+            temp = temp.next;
+
+        }
+        return mergeLL.next;
+    }
+
+    public Node mergeSort(Node head) {
+
+        // Base case
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        // find mid
+        Node mid = getMid(head);
+
+        // call mergeSort for left and right parts
+        Node rightHead = mid.next;
+        mid.next = null;
+        Node newLeft = mergeSort(head);
+        Node newRight = mergeSort(rightHead);
+
+        // merge
+        return merge(newLeft, newRight);
+    }
+
+    // Zig Zag LinkedList
+    // 15
+
+    public void zigZagLinkedList() {
+        // find mid
+        Node slow = head;
+        Node fast = head.next;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+        }
+        Node mid = slow;
+
+        // revers LinkedList
+        Node current = mid.next;
+        mid.next = null;
+        Node prev = null;
+        Node next;
+
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+
+        }
+
+        Node left = head;
+        Node right = prev;
+        Node nextLeft, nextRight;
+
+        // alt merge - zing zag merge
+        while (left != null && right != null) {
+            nextLeft = left.next;
+            left.next = right;
+            nextRight = right.next;
+            right.next = nextLeft;
+
+            left = nextLeft;
+            right = nextRight;
+
+        }
+    }
+
     public static void main(String[] args) {
         LinkedList1 ll = new LinkedList1();
-        // ll.addFirst(2);
-        // ll.addFirst(1);
-        // ll.addLast(4);
-        // ll.addLast(5);
-        // ll.addInMiddle(2, 3);
-        // ll.printLinkList();
-        // System.out.println(ll.size); this one is true
-        // System.out.println(LinkedList1.size); // but we can also write this way too
-        // print size
-        // ll.removeFirst();
-        // ll.printLinkList();
-        // ll.removeLast();
-        // ll.printLinkList();
-        // System.out.println(ll.iterativeSearch(3));
-        // System.out.println(ll.iterativeSearch(7));
-        // System.out.println(ll.recursiveSearch(3));
-        // System.out.println(ll.recursiveSearch(5));
-        // ll.printLinkList();
-        // ll.reversLinkedList();
-        // ll.printLinkList();
-        // ll.deleteNthFromEnd(3);
-        // ll.printLinkList();
-        ll.addLast(1);
-        ll.addLast(2);
-        ll.addLast(2);
-        ll.addLast(1);
+
+        ll.addFirst(5);
+        ll.addFirst(4);
+        ll.addFirst(3);
+        ll.addFirst(2);
+        ll.addFirst(1);
         ll.printLinkList();
-        System.out.println(ll.checkPalindrome());
+        // LinkedList1.head = ll.mergeSort(LinkedList1.head);
+        // ll.printLinkList();
+        ll.zigZagLinkedList();
+        ll.printLinkList();
 
     }
 }
