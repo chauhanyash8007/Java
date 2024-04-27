@@ -2,17 +2,17 @@
 //Space Complexity: o(1)
 //  Swapping Nodes in a LinkedList 
 
-class Node {
-    int data;
-    Node next;
-
-    Node(int d) {
-        data = d;
-        next = null;
-    }
-}
-
 public class swappingNodes7 {
+    public class Node {
+        int data;
+        Node next;
+
+        Node(int d) {
+            data = d;
+            next = null;
+        }
+    }
+
     Node head;
 
     public void swapNodes(int x, int y) {

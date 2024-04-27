@@ -35,7 +35,7 @@ public class DeleteNodes6 {
                 return;
             t = current.next;
             for (count = 1; count <= N && t != null; count++) {
-                Node temp = t;
+                // Node temp = t;
                 t = t.next;
             }
             current.next = t;

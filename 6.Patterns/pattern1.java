@@ -1,7 +1,7 @@
 /*
 
   *
-  ***
+  **
   ***      // print the following pattern
   ****
 

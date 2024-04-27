@@ -62,8 +62,6 @@ public class Array15 {
         int target = 0;
 
         System.out.println(search(numbers, target));
-        System.out.println(search(numbers, target, target, target));
 
-        System.out.println(minSearch(numbers));
     }
 }
