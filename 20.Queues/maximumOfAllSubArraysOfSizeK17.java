@@ -13,7 +13,7 @@ public class maximumOfAllSubArraysOfSizeK17 {
                 Qi.removeLast();
             Qi.addLast(i);
         }
-        for (; i < n; ++i) {
+        for (i = k; i < n; ++i) {
             System.out.print(arr[Qi.peek()] + " ");
             while ((!Qi.isEmpty()) && Qi.peek() <= i - k)
                 Qi.removeFirst();
