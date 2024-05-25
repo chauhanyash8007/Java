@@ -12,7 +12,8 @@ public class subTreeOfAnotherTree4 {
     }
 
     // 11)
-    // Sub Tree Od A Another Tree
+    // Sub Tree Of A Another Tree
+    // Time Complexity = O(n^2)
 
     public static boolean isIdentical(Node node, Node subRoot) {
         // base Conditions

@@ -93,8 +93,8 @@ public class diameterOfATree3 {
 
         System.out.println("Method 1 = " + diameter2(root));
 
-        System.out.println("Mathod 2 = " + diameter(root).diameter);
-        System.out.println("Mathod 2 = " + diameter(root).height);
+        System.out.println("Method 2 = " + diameter(root).diameter);
+        System.out.println("Method 2 = " + diameter(root).height);
         // This will return information object
         // so we need to return Object of Diameter
 
