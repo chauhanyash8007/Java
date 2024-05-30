@@ -1,18 +1,4 @@
-//Time Complexity : o(n)
-//Space Complexity: o(h)
-
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int x) {
-        data = x;
-        left = right = null;
-    }
-}
-
-public class findKthSmallestElementINInBST11 {
-
+public class findKthSmallestElement11 {
     static int count = 0;
 
     public static Node insert(Node root, int x) {
@@ -53,5 +39,15 @@ public class findKthSmallestElementINInBST11 {
         int k = 3;
         printKthSmallest(root, k);
 
+    }
+}
+
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int x) {
+        data = x;
+        left = right = null;
     }
 }
