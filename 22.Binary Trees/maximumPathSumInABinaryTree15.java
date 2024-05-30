@@ -3,20 +3,6 @@
 // 23)
 // Maximum Path Sum In A Binary Tree
 
-class Node {
-    int data;
-    Node left, right;
-
-    public Node(int item) {
-        data = item;
-        left = right = null;
-    }
-}
-
-class Res {
-    public int val;
-}
-
 public class maximumPathSumInABinaryTree15 {
     Node root;
 
@@ -66,4 +52,18 @@ public class maximumPathSumInABinaryTree15 {
                 tree.findMaxSum());
 
     }
+}
+
+class Node {
+    int data;
+    Node left, right;
+
+    public Node(int item) {
+        data = item;
+        left = right = null;
+    }
+}
+
+class Res {
+    public int val;
 }
