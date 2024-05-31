@@ -6,6 +6,16 @@
 // Invert Binary Tree
 
 public class invertBinaryTree12 {
+    static class Node {
+        int data;
+        Node left, right;
+
+        public Node(int item) {
+            data = item;
+            left = right = null;
+        }
+    }
+
     Node root;
 
     void mirror() {
@@ -66,15 +76,5 @@ public class invertBinaryTree12 {
         System.out.println("InOrder traversal of binary tree is : ");
         tree.inOrder();
 
-    }
-}
-
-class Node {
-    int data;
-    Node left, right;
-
-    public Node(int item) {
-        data = item;
-        left = right = null;
     }
 }
