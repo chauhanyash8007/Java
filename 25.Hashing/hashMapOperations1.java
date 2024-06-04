@@ -5,6 +5,8 @@ public class hashMapOperations1 {
     public static void main(String[] args) {
 
         // Create
+        // HashMaps Are Implemented By Linked Lists
+        // Performance = HashMap > Linked HashMaps
         HashMap<String, Integer> map = new HashMap<>();
 
         // 1) Put Operations (add) Time -> O(1)

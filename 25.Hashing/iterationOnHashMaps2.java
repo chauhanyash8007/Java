@@ -1,3 +1,5 @@
+// Time -> o(n)
+
 import java.util.*;
 
 public class iterationOnHashMaps2 {

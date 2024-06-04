@@ -5,6 +5,8 @@ public class LinkedHashMap4 {
         // It is Used To print Value In Order that we have added
         // Print In Ordered List
         // All Operations Time -> O(1) -> same As HashMap
+        // It's Internal Implementations Is Done By Using --> Doubly LinkedList
+        // Performance = Linked HashMap < HashMap
         LinkedHashMap<String, Integer> lMap = new LinkedHashMap<>();
         lMap.put("India", 100);
         lMap.put("China", 150);
