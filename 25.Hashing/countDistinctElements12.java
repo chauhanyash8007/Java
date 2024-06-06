@@ -10,5 +10,10 @@ public class countDistinctElements12 {
         }
         System.out.println("Distinct elements are: " + set.size());
 
+        for (Integer k : set) {
+            System.out.print(k + " ");
+        }
+        System.out.println();
+
     }
 }
