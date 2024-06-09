@@ -1,6 +1,8 @@
+// Kahn's algorithm
+
 import java.util.*;
 
-public class TopologicalSorting9 {
+public class TopologicalSortingUsingBFS10 {
     static class Edge {
         int src;
         int dest;
@@ -33,32 +35,40 @@ public class TopologicalSorting9 {
 
     }
 
-    // Time -> o(V+E)
-    public static void TopologicalSorting(ArrayList<Edge> graph[]) {
-        boolean vis[] = new boolean[graph.length];
-        Stack<Integer> s = new Stack<>();
+    public static void calculateInDegree(ArrayList<Edge> graph[], int indDeg[]) {
         for (int i = 0; i < graph.length; i++) {
-            if (!vis[i]) {
-                TopologicalSortingUtil(graph, i, vis, s);
+            int V = i;
+            for (int j = 0; j < graph[V].size(); j++) {
+                Edge e = graph[V].get(j);
+                indDeg[e.dest]++;
             }
-        }
-        while (!s.isEmpty()) {
-            System.out.print(s.pop() + " ");
         }
     }
 
-    public static void TopologicalSortingUtil(ArrayList<Edge> graph[], int current, boolean vis[],
-            Stack<Integer> s) {
+    public static void topSort(ArrayList<Edge> graph[]) {
+        int indDeg[] = new int[graph.length];
+        calculateInDegree(graph, indDeg);
+        Queue<Integer> q = new LinkedList<>();
 
-        vis[current] = true;
-        for (int i = 0; i < graph[current].size(); i++) {
-            Edge e = graph[current].get(i);
-            if (!vis[e.dest]) {
-                TopologicalSortingUtil(graph, e.dest, vis, s);
+        for (int i = 0; i < indDeg.length; i++) {
+            if (indDeg[i] == 0) {
+                q.add(i);
             }
         }
-        s.push(current);
 
+        while (!q.isEmpty()) {
+            int current = q.remove();
+            System.out.print(current + " ");
+
+            for (int i = 0; i < graph[current].size(); i++) {
+                Edge e = graph[current].get(i);
+                indDeg[e.dest]--;
+                if (indDeg[e.dest] == 0) {
+                    q.add(e.dest);
+                }
+            }
+        }
+        System.out.println();
     }
 
     @SuppressWarnings("unchecked")
@@ -66,7 +76,7 @@ public class TopologicalSorting9 {
         int V = 6;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
-        TopologicalSorting(graph);
+        topSort(graph);
 
     }
 }
