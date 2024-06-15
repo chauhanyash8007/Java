@@ -18,10 +18,7 @@ public class OOPS8 {
         s1.marks[2] = 80;
 
         Student s2 = new Student(s1);
-        System.out.println(s2.name);
-        System.out.println(s2.roll);
-        s2.password = "Yc cha";
-        System.out.println(s2.password);
+        s2.password = "Y";
         s1.marks[2] = 100;
 
         for (int i = 0; i < 3; i++) {
