@@ -1,7 +1,7 @@
 // Time Complexity = O(n)
 
 public class ClimBingStairsTabulation5 {
-    public static int countWays(int n) {
+    public static int countWaysTabulation(int n) {
         int dp[] = new int[n + 1];
         dp[0] = 1;
         for (int i = 1; i <= n; i++) {
@@ -17,7 +17,7 @@ public class ClimBingStairsTabulation5 {
 
     public static void main(String[] args) {
         int n = 5;
-        System.out.println("Total ways to reach n = " + countWays(n));
+        System.out.println("Total ways to reach n = " + countWaysTabulation(n));
 
     }
 }

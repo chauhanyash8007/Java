@@ -3,7 +3,7 @@
 import java.util.Arrays;
 
 public class ClimbingStairsMemoization4 {
-    public static int countWays(int n, int ways[]) {
+    public static int countWaysMemoization(int n, int ways[]) {
         if (n == 0) {
             return 1;
         }
@@ -13,7 +13,7 @@ public class ClimbingStairsMemoization4 {
         if (ways[n] != -1) {
             return ways[n];
         }
-        ways[n] = countWays(n - 1, ways) + countWays(n - 2, ways);
+        ways[n] = countWaysMemoization(n - 1, ways) + countWaysMemoization(n - 2, ways);
         return ways[n];
     }
 
@@ -21,7 +21,7 @@ public class ClimbingStairsMemoization4 {
         int n = 5;
         int ways[] = new int[n + 1];
         Arrays.fill(ways, -1);
-        System.out.println(countWays(n, ways));
+        System.out.println(countWaysMemoization(n, ways));
 
     }
 }
