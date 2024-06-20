@@ -1,7 +1,7 @@
 // Time Complexity = O(n)
 
 public class fibonacciUsingTabulationBottomUp2 {
-    public static int fifTabulation(int n) {
+    public static int fibTabulation(int n) {
         int dp[] = new int[n + 1];
         dp[0] = 0;
         dp[1] = 1;
@@ -13,6 +13,6 @@ public class fibonacciUsingTabulationBottomUp2 {
 
     public static void main(String[] args) {
         int n = 5;
-        System.out.println(fifTabulation(n));
+        System.out.println(fibTabulation(n));
     }
 }
