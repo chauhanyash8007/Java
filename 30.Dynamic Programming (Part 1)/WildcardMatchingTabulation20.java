@@ -18,6 +18,8 @@ public class WildcardMatchingTabulation20 {
         }
 
         // s="" then check of pattern
+        // p.charAt(j-1) == '?' || p.charAt(j -1) == 'any char' -> false by default
+        // store
         for (int j = 1; j < m + 1; j++) {
             if (p.charAt(j - 1) == '*') { // match with * then check for j-1 pattern
                 dp[0][j] = dp[0][j - 1]; // case true -> true || case false -> false will be store
