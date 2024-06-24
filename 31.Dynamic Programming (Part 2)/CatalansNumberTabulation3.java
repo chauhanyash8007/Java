@@ -10,7 +10,15 @@ public class CatalansNumberTabulation3 {
                 dp[i] += dp[j] * dp[i - j - 1];
             }
         }
+        printDP(dp);
         return dp[n];
+    }
+
+    public static void printDP(int dp[]) {
+        for (int i = 0; i < dp.length; i++) {
+            System.out.print(dp[i] + " ");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {

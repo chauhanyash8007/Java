@@ -13,7 +13,15 @@ public class CountingBSTTreesTabulation4 {
                 dp[i] += leftSubTree * rightSubTree;
             }
         }
+        printDP(dp);
         return dp[n];
+    }
+
+    public static void printDP(int dp[]) {
+        for (int i = 0; i < dp.length; i++) {
+            System.out.print(dp[i] + " ");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
