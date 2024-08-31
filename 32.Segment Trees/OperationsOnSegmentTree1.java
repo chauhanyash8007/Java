@@ -47,8 +47,8 @@ public class OperationsOnSegmentTree1 {
         if (index < si || index > sj) { // No overlap case
             return;
         }
-        tree[i] += diff; // overlap case
-        if (si != sj) { // Overlap case non leaf values
+        tree[i] += diff; // overlap case and leaf case
+        if (si != sj) { // Overlap case non leaf case values
             int mid = (si + sj) / 2;
             updateUtil(2 * i + 1, si, mid, index, diff); // left
             updateUtil(2 * i + 2, mid + 1, sj, index, diff); // right
@@ -75,13 +75,20 @@ public class OperationsOnSegmentTree1 {
         }
         System.out.println();
 
-        System.out.println(getSum(arr, 2, 5));
+        System.out.println(getSum(arr, 2, 5)); // 18
         update(arr, 2, 2);
-        System.out.println(getSum(arr, 2, 5));
+        System.out.println(getSum(arr, 2, 5)); // 17
 
-        System.out.println(getSum(arr, 0, 5));
-        System.out.println(getSum(arr, 4, 5));
-        System.out.println(getSum(arr, 3, 7));
+        System.out.println(getSum(arr, 0, 5)); // 20
+        System.out.println(getSum(arr, 4, 5)); // 21
+        System.out.println(getSum(arr, 3, 7)); // 30
 
     }
 }
+
+/*
+ * Segment Trees -> Used To Solve Range Query Questions
+ * It is Type of Full Binary tree -> Each has 2 child node expect of leaf node
+ * Total Levels in Segment Tree -> log n base 2 Levels
+ * Total nodes in Segment Tree -> 2n - 1
+ */

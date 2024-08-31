@@ -50,8 +50,8 @@ public class MaxSegmentTree2 {
         if (si == sj) { // leaf case
             tree[i] = newValue;
         }
-        if (si != sj) { // non leaf value
-            tree[i] = Math.max(tree[i], newValue);// overlap case
+        if (si != sj) { // non leaf value / overlap case
+            tree[i] = Math.max(tree[i], newValue);
 
             int mid = (si + sj) / 2;
             updateUtil(2 * i + 1, si, mid, index, newValue); // left
@@ -79,9 +79,9 @@ public class MaxSegmentTree2 {
         }
         System.out.println();
 
-        System.out.println(getMax(arr, 2, 5));
+        System.out.println(getMax(arr, 2, 5)); // 17
         update(arr, 2, 20);
-        System.out.println(getMax(arr, 2, 5));
+        System.out.println(getMax(arr, 2, 5)); // 20
 
     }
 }
